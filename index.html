@@ -9,13 +9,37 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <h1>Your Library</h1>
-      <button class="add-book-btn">Add book +</button>
-    </header>
+    <div class="modal-backdrop">
+      <div class="add-book-modal">
+        <button class="exit-modal-btn">X</button>
 
-    <main class="library">
-      <span class="no-books-msg">No Books Entered Yet</span>
-    </main>
+        <form class="modal-form">
+          <div class="form-item">
+            <label for="book">Book</label>
+            <input type="text" id="book" required />
+          </div>
+          <div class="form-item">
+            <label for="author">Author</label>
+            <input type="text" id="author" required />
+          </div>
+          <div class="form-item">
+            <label for="read">Read</label>
+            <input type="checkbox" name="read" id="read" />
+          </div>
+          <button type="submit" class="submit-book-modal-btn">Add Book</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <header class="header">
+        <h1>Your Library</h1>
+        <button class="add-book-btn">Add book +</button>
+      </header>
+
+      <main class="library">
+        <!-- <span class="no-books-msg">No Books Entered Yet</span> -->
+        <ol class="library-grid"></ol>
+      </main>
+    </div>
   </body>
 </html>

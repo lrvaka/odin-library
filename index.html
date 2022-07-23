@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
+    <script src="classes.js" defer></script>
   </head>
   <body>
     <div class="modal-backdrop">
       <div class="add-book-modal">
         <button class="exit-modal-btn">X</button>
 
-        <form class="modal-form">
+        <div class="modal-form">
           <div class="form-item">
             <label for="book">Book</label>
             <input type="text" id="book" required />
@@ -26,8 +26,8 @@
             <label for="read">Read</label>
             <input type="checkbox" name="read" id="read" />
           </div>
-          <button type="submit" class="submit-book-modal-btn">Add Book</button>
-        </form>
+          <button class="submit-book-modal-btn">Add Book</button>
+        </div>
       </div>
     </div>
     <div class="container">
